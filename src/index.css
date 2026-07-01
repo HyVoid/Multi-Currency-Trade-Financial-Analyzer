@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "EB Garamond", Georgia, serif;
+  --font-body: "Inter", "Noto Sans SC", system-ui, -apple-system, sans-serif;
+  
+  --color-primary: #051C2C;
+  --color-accent: #2251FF;
+  --color-bg: #F5F5F2;
+  --color-muted: #888888;
+  --color-body-text: #1A1A2E;
+  
+  --color-positive: #00C853;
+  --color-negative: #D32F2F;
+  --color-surface: #FFFFFF;
+  --color-input-bg: #FFFDE7;
+  --color-border: #E8E8E6;
+  
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+:root {
+  /* Core Palette */
+  --color-primary: #051C2C;
+  --color-accent: #2251FF;
+  --color-bg: #F5F5F2;
+  --color-muted: #888888;
+  --color-body-text: #1A1A2E;
+  
+  --color-positive: #00C853;
+  --color-negative: #D32F2F;
+  --color-surface: #FFFFFF;
+  --color-input-bg: #FFFDE7;
+  --color-border: #E8E8E6;
+
+  /* Typography */
+  --font-heading: 'EB Garamond', Georgia, serif;
+  --font-body: 'Inter', 'Noto Sans SC', sans-serif;
+
+  /* Tracking */
+  --tracking-display: -0.03em;
+  --tracking-heading: -0.02em;
+  --tracking-label: 0.06em;
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 1px 2px rgba(5, 28, 44, 0.04), 0 2px 8px rgba(5, 28, 44, 0.06);
+  --shadow-md: 0 2px 4px rgba(5, 28, 44, 0.04), 0 8px 24px rgba(5, 28, 44, 0.08), 0 1px 0px rgba(255,255,255,0.6) inset;
+  --shadow-lg: 0 4px 8px rgba(5, 28, 44, 0.06), 0 16px 48px rgba(5, 28, 44, 0.14), 0 1px 0px rgba(255,255,255,0.5) inset;
+  --shadow-nav: 0 1px 3px rgba(5, 28, 44, 0.06), 0 1px 0px rgba(5, 28, 44, 0.08);
+
+  /* Animation */
+  --ease-standard: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1.0);
+  --ease-decel: cubic-bezier(0.0, 0.0, 0.2, 1.0);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-body-text);
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Page transitions / fading entrance */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 220ms var(--ease-decel) both;
+}
+
+/* Layered custom shadows */
+.custom-shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.custom-shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+.custom-shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+.custom-shadow-nav {
+  box-shadow: var(--shadow-nav);
+}
+
+/* Card lift hover interaction */
+.interactive-card {
+  transition: transform 250ms var(--ease-spring), box-shadow 250ms var(--ease-standard);
+}
+
+.interactive-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Exposure matrix or cells clickable feedback */
+.clickable-cell {
+  transition: transform 150ms var(--ease-standard), filter 150ms var(--ease-standard);
+}
+
+.clickable-cell:hover {
+  transform: scale(1.04);
+  filter: brightness(1.08);
+}
+
+/* Hide scrollbar for clean horizontal layouts */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Multi-Currency Trade Financial Analyzer",
+  "description": "Cross-border trade financial manager and Excel-like multi-currency tracking workbook with real-time computations, debt and credit trackers, and currency exchange valuation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

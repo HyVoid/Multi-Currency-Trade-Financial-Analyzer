@@ -1,0 +1,42 @@
+# GitHub Actions workflow to deploy the Multi-Currency Trade Financial Analyzer to GitHub Pages
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # change to master or your active development branch if different
+
+permissions:
+  contents: write # required for JamesIves/github-pages-deploy-action
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js Runtime Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          # CRITICAL: We do NOT define "cache: 'npm'" because the workspace might not
+          # contain a dependencies lockfile (e.g. package-lock.json / yarn.lock).
+          # Omitting caching prevents GitHub Actions build pipeline termination due to:
+          # "Dependencies lock file is not found in /home/runner/work/."
+
+      - name: Install Applet Dependencies
+        run: npm install
+
+      - name: Verify Types and Compile Applet
+        run: npm run build
+        # Note: Since vite.config.ts has "base: './'" configured, all asset references in the
+        # built bundle (inside the dist/ directory) will be compiled as relative paths.
+        # This allows direct hosting on GitHub Pages under any repository subfolder subpath.
+
+      - name: Deploy Compiled static build to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # The folder Vite builds into
+          branch: gh-pages # The target branch for GitHub Pages hosting
+          clean: true # Automatically remove old files on deployment
