@@ -8,7 +8,7 @@
 
 > **No signup. No installation. Free.**
 >
-> 🌐 **Open in Browser** → HTML version (coming soon)
+> 🌐 **Open in Browser** → [HTML version](https://hyvoid.github.io/Multi-Currency-Trade-Financial-Analyzer/)
 >
 > 📥 **Download Excel** → GitHub Release / Gumroad version
 >
