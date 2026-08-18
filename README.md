@@ -16,22 +16,6 @@
 
 ---
 
-## Screenshots
-
-### Browser Version
-
-<!-- screenshot: browser version -->
-
-*Operational dashboard showing real-time cash position, customer receivables, supplier liabilities, FX exposure, and deal-level profitability.*
-
-### Excel Version
-
-<!-- screenshot: excel version -->
-
-*Structured workbook interface for recording purchases, sales, financing, foreign exchange settlements, and automated profitability calculations.*
-
----
-
 ## What It Helps You Track
 
 * Actual realized profit after foreign exchange conversion rather than paper profit at invoice date.
