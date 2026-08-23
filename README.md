@@ -6,7 +6,9 @@
 
 **A free, no-install decision-support framework for calculating deal-level profitability, FX realization risk, customer credit exposure, supplier financing costs, and working capital across multi-currency import/export operations.**
 
-> **No signup. No installation. Free.**
+**No signup. No installation. Free in your browser.**
+
+Try the browser version for free. If you need the Excel version, you can buy it with a 7-day money-back guarantee.
 >
 > 🌐 **Open in Browser** → [HTML version](https://hyvoid.github.io/Multi-Currency-Trade-Financial-Analyzer/)
 >
