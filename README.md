@@ -12,7 +12,7 @@ Try the browser version for free. If you need the Excel version, you can buy it 
 >
 > 🌐 **Open in Browser** → [HTML version](https://hyvoid.github.io/Multi-Currency-Trade-Financial-Analyzer/)
 >
-> 📥 **Download Excel** → GitHub Release / Gumroad version
+> 📥 **Download Excel** → GitHub Release / [Website](https://www.theseusworkshop.com/) version
 >
 > Available in both **browser-based HTML** and **native Excel** formats.
 
