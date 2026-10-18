@@ -1,3 +1,4 @@
+[ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 # Track Real Profit, FX Exposure, Credit Risk, and Working Capital Across Europe–Africa Trade Operations
 
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
@@ -29,7 +30,7 @@ Try the browser version for free. If you need the Excel version, you can buy it 
 
 ---
 
-# Why I Built This
+## Why I Built This
 
 Many Europe–Africa trading businesses do not actually have a bookkeeping problem.
 
