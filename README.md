@@ -17,6 +17,19 @@ Try the browser version for free. If you need the Excel version, you can buy it 
 >
 > Available in both **browser-based HTML** and **native Excel** formats.
 
+
+## Questions, Feedback & Product Updates
+
+This toolkit is designed around practical deal-level multi-currency trading profit, fx realization, credit exposure and working capital workflows. Feedback helps identify unclear assumptions, missing scenarios, calculation issues, and improvements to the decision process.
+
+- **Questions & workflow fit:** [Ask about deal-level profitability, invoice-date versus settlement-date FX, currency conversion, customer installment tracking, overdue credit exposure, supplier financing cost, or working-capital reconciliation](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/questions).
+- **Ideas & improvements:** [Suggest additional currency pairs, settlement stages, financing-cost rules, credit-risk thresholds, or deal-level profitability outputs](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/ideas).
+- **Report a technical problem:** [Open the Multi-Currency-Trade-Financial-Analyzer issue form](https://github.com/HyVoid/Multi-Currency-Trade-Financial-Analyzer/issues/new?template=bug-report.yml).
+- **Product updates:** [Follow maintenance and improvement notes](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/product-updates).
+
+Do not post customer or supplier names, bank/account details, trade contracts, shipping documents, tax identifiers, credit files, or raw transaction exports. Use fictional Deal IDs, currencies, dates, and amounts.
+Use the smallest reproducible example possible. Include the relevant worksheet, input field, date or scenario, and expected versus actual result. Browser demos and spreadsheet previews should be described separately from the downloadable Excel workbook when reporting an environment-specific issue.
+
 ---
 
 ## What It Helps You Track
